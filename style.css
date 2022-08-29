@@ -1,11 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Silkscreen:regular,700);
+
 * {
     margin: 0;
-
+    font-family: 'Silkscreen', cursive;
 }
 
 body {
     background: url(./imgs/Background.png);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-position: top;
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+    color: white;;
 }
+
+h1 {
+    font-family: 'Silkscreen', cursive;
+}
+
+
+
+/* Game UI */
+.time-limit {
+    align-self: center;
+}
+
+
+/* Player */
+.ui-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div > .player-container {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin: 50px;
+}
+
+div.icon-container {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    background-color: white;
+    border: 6px black solid;
+    margin: 0 12px;
+}
+
+div.player-health-bar-container {
+    background-color: black;
+    padding: 3px 3px;
+    margin-left: -18px;
+    border: 5px black solid;
+}
+
+div.player-health-bar {
+    background-color: green;
+    padding: 10px 60px;
+    
+}
+
+.player-icon {
+    width: 90%;
+}
+
+.player-name {
+    font-size: 24px;
+    margin-top: -5px;
+}
+
+/* Computer*/
+
+div > .comp-container {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+    margin: 50px;
+}
+
+div.comp-health-bar-container {
+    background-color: black;
+    padding: 3px 3px;
+    margin-right: -18px;
+    border: 5px black solid;
+}
+
+div.comp-health-bar {
+    background-color: green;
+    padding: 10px 60px;
+}
+
+.comp-icon {
+    width: 90%;
+}
+
+.comp-name {
+    font-size: 24px;
+    margin-top: -5px;
+}
+
+/* Selections */
+input {
+    width: 20%;
+}
+
+
+/* Results */

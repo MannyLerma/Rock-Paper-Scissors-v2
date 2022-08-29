@@ -4,10 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Silkscreen:regular,700" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <title>Rock, Paper, Scissors</title>
 </head>
 <body>
-    Hello World
+    <!---Title of the game--->
+    <div class = "title-container">
+        <h2>Triple Threat Match</h2>
+        <h1>Rock, Paper, Scissors</h1>
+    </div>
+
+    <!---Game UI--->
+    <div class = "ui-container">
+        <div class = "player-container">
+            <div class = "icon-container"><img src="./imgs/player-icon.png" alt="player-icon" class = "player-icon"></div>
+            <div>
+                <div class = "player-name">You</div>
+                <div class = "player-health-bar-container">
+                   <div class = "player-health-bar">life bar</div>
+                </div>
+            </div>
+        </div>
+        <div class = "time-limit">
+            <img src="./imgs/infinite-time.png" alt="player-icon" class = "player-icon">
+        </div>
+        <div class = "comp-container">
+            <div class = "icon-container"><img src="./imgs/player-icon.png" alt="comp-icon" class = "comp-icon"></div>
+            <div>
+            <div class = "comp-name">CPU</div>
+            <div class = "comp-health-bar-container">
+                <div class = "comp-health-bar">life bar</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div>
+        <h2 id = "result">CHOOSE YOUR FIGHTER</h2>
+        <h2></h2>
+    </div>
+</div>
+
+<!---Game Selection--->
+<div id = "game">
+    <input type = "image" src = "./imgs/icon-placeholder.jpeg" id = "rock" value = "Rock"> </input>
+    <input type = "image" src = "./imgs/icon-placeholder.jpeg" id = "paper" value = "Paper"> </input>
+    <input type = "image" src = "./imgs/icon-placeholder.jpeg" id = "scissors" value = "Scissors"> </input>
+</div>
+
+
+<!---Refresher---->
+<button onClick = "refreshPage()" >Press for a rematch</button>
+
 </body>
+<script src="main.js"></script>
 </html>
