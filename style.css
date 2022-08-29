@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+
+}
+
+body {
+    background: url(./imgs/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: top;
+}
