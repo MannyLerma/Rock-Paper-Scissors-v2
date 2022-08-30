@@ -59,6 +59,8 @@ function getResult() {
     let result = ""
     let score = ""
 
+    let playerHealthBar = document.getElementById("player-health-bar").style.width;
+
     if (userChoice === compChoice) {
         // resultDisplay.innerHTML = "It's a Draw!"
         score = ("<br> Play Score: " + playerScore + "Computer Score " + compScore )
@@ -71,11 +73,25 @@ function getResult() {
         playerScore++;
         score = ("Play Score " + playerScore + "Computer Score " + compScore)
 
-        if (playerScore === 5) {
+        if (playerScore === 1) {
+            document.getElementById("comp-health-bar").style.width = "160px";
+        } else if (playerScore === 2) {
+            document.getElementById("comp-health-bar").style.width = "120px";
+            document.getElementById('comp-health-bar').style.backgroundColor = "yellow"
+        } else if (playerScore === 3) {
+            document.getElementById("comp-health-bar").style.width = "80px";
+            document.getElementById('comp-health-bar').style.backgroundColor = "yellow"
+        } else if (playerScore === 4) {
+            document.getElementById("comp-health-bar").style.width = "40px";
+            document.getElementById('comp-health-bar').style.backgroundColor = "red"
+        } else if (playerScore === 5) {
             result += "You won the match!"
-            compHealthBar = "10px 5px";
+            document.getElementById("comp-health-bar").style.width = "0px";
+            document.getElementById('comp-health-bar').style.backgroundColor = "red"
+            userChoiceDisplay.remove()
+            compChoiceDisplay.remove()
             disableButton();
-        }
+        } 
     } if (
         (compChoice === 'rock' && userChoice == 'scissors') ||
         (compChoice === 'scissors' && userChoice == 'paper') ||
@@ -85,11 +101,25 @@ function getResult() {
         compScore++;
         score = ("Play Score: " + playerScore + "Computer Score: " + compScore)
 
-        if (compScore === 5) {
+        if (compScore === 1) {
+            document.getElementById("player-health-bar").style.width = "160px";
+        } else if (compScore === 2) {
+            document.getElementById("player-health-bar").style.width = "120px";
+            document.getElementById('player-health-bar').style.backgroundColor = "yellow"
+        } else if (compScore === 3) {
+            document.getElementById("player-health-bar").style.width = "80px";
+            document.getElementById('player-health-bar').style.backgroundColor = "yellow"
+        } else if (compScore === 4) {
+            document.getElementById("player-health-bar").style.width = "40px";
+            document.getElementById('player-health-bar').style.backgroundColor = "red"
+        }  else if (compScore === 5) {
             result += "You lost the match!"
-            document.getElementById("player-health-bar").style.padding = "14px 10px";
+            document.getElementById("player-health-bar").style.width = "0px";
+            document.getElementById('player-health-bar').style.backgroundColor = "red"
+            userChoiceDisplay.remove()
+            compChoiceDisplay.remove()
             disableButton();
-        }
+        }   
 
     }
 

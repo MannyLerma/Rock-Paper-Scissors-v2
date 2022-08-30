@@ -30,7 +30,7 @@
             <img src="./imgs/infinite-time.png" alt="player-icon" class = "player-icon">
         </div>
         <div class = "comp-container">
-            <div class = "icon-container"><img src="./imgs/player-icon.png" alt="comp-icon" class = "comp-icon"></div>
+            <div class = "icon-container"><img src="./imgs/cpu-icon.png" alt="comp-icon" class = "comp-icon"></div>
             <div>
             <div class = "comp-name">CPU</div>
             <div class = "comp-health-bar-container">
@@ -49,14 +49,17 @@
 
 <!---Game Selection--->
 <div id = "game">
-    <input type = "image" src = "./imgs/icon-placeholder.jpeg" id = "rock" value = "Rock"> </input>
-    <input type = "image" src = "./imgs/icon-placeholder.jpeg" id = "paper" value = "Paper"> </input>
-    <input type = "image" src = "./imgs/icon-placeholder.jpeg" id = "scissors" value = "Scissors"> </input>
+    <input type = "image" src = "./imgs/player-placeholder.png" id = "rock" value = "Rock"> </input>
+    <input type = "image" src = "./imgs/player-placeholder.png" id = "paper" value = "Paper"> </input>
+    <input type = "image" src = "./imgs/player-placeholder.png" id = "scissors" value = "Scissors"> </input>
 </div>
 
 
 <!---Refresher---->
-<button onClick = "refreshPage()" >Press for a rematch</button>
+<div class = "new-game-container">
+    <img type = "image" class = "new-game" src = "./imgs/new-game-button.png" onClick = "refreshPage()"></img>
+</div>
+<!-- <button onClick = "refreshPage()">Press for a rematch</button> -->
 
 </body>
 <script src="main.js"></script>

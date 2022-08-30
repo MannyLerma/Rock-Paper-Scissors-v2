@@ -13,10 +13,17 @@ body {
     font-family: 'Silkscreen', cursive;
     text-align: center;
     color: white;
+    height: 100%;
 }
 
 h1 {
     font-family: 'Silkscreen', cursive;
+    color: yellow;
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-top: 20px;
 }
 
 
@@ -24,15 +31,26 @@ h1 {
 /* Game UI */
 .time-limit {
     align-self: center;
+    margin-bottom: -30px;
 }
 
+.title-container {
+    margin-top: 25px;
+}
 
-/* Player */
 .ui-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: -40px 0;
+    height: 185px;
 }
+
+#game {
+    padding: 5px 0px 15px 0px;
+}
+
+/* Player Side */
 
 div > .player-container {
     display: flex;
@@ -46,16 +64,14 @@ div.icon-container {
     justify-content: center;
     height: 70px;
     background-color: white;
-    border: 6px darkgray solid;
+    border: 6px black solid;
     margin: 0 12px;
 }
 
 div.player-health-bar-container {
-    background-color: darkgray;
-    padding: 9px 7px;
-    margin-left: 0px;
-    /* border: 0px darkgray solid; */
+    background-color: gray;
     width: 200px;
+    border: 7px black solid;
 }
 
 div.player-health-bar {
@@ -71,11 +87,11 @@ div.player-health-bar {
 
 .player-name {
     font-size: 24px;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
     margin-top: -7px;
 }
 
-/* Computer*/
+/* Computer Side*/
 
 div > .comp-container {
     display: flex;
@@ -85,15 +101,18 @@ div > .comp-container {
 }
 
 div.comp-health-bar-container {
-    background-color: black;
-    padding: 3px 3px;
-    margin-right: -18px;
-    border: 5px black solid;
+    background-color: gray;
+    width: 200px;
+    border: 7px black solid;
+    height: 35px;
 }
 
 div.comp-health-bar {
     background-color: green;
-    padding: 10px 60px;
+    /* padding: 14px 100px; */
+    height: 35px;
+    width: 200px;
+    display: inline-flex;
 }
 
 .comp-icon {
@@ -102,13 +121,30 @@ div.comp-health-bar {
 
 .comp-name {
     font-size: 24px;
-    margin-top: -5px;
+    margin-bottom: 10px;
+    margin-top: -7px;
 }
 
 /* Selections */
-input {
-    width: 20%;
+#game > input {
+    width: 180px;
+    margin-top: 30px;
+    padding: 0px 40px 0 40px;
+    height: 335px;
+}
+
+.new-game {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    cursor: pointer;
+    color: black;
 }
 
 
+.new-game-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
 /* Results */
