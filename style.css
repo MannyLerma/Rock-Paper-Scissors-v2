@@ -12,7 +12,7 @@ body {
     background-position: top;
     font-family: 'Silkscreen', cursive;
     text-align: center;
-    color: white;;
+    color: white;
 }
 
 h1 {
@@ -46,21 +46,23 @@ div.icon-container {
     justify-content: center;
     height: 70px;
     background-color: white;
-    border: 6px black solid;
+    border: 6px darkgray solid;
     margin: 0 12px;
 }
 
 div.player-health-bar-container {
-    background-color: black;
-    padding: 3px 3px;
-    margin-left: -18px;
-    border: 5px black solid;
+    background-color: darkgray;
+    padding: 9px 7px;
+    margin-left: 0px;
+    /* border: 0px darkgray solid; */
+    width: 200px;
 }
 
 div.player-health-bar {
     background-color: green;
-    padding: 10px 60px;
-    
+    /* padding: 14px 100px; */
+    height: 35px;
+    width: 200px;
 }
 
 .player-icon {
@@ -69,7 +71,8 @@ div.player-health-bar {
 
 .player-name {
     font-size: 24px;
-    margin-top: -5px;
+    margin-bottom: 6px;
+    margin-top: -7px;
 }
 
 /* Computer*/

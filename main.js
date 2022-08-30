@@ -2,6 +2,9 @@ const userChoiceDisplay = document.createElement('h3');
 const compChoiceDisplay = document.createElement('h3');
 const resultDisplay = document.createElement('h2');
 
+// let playerHealthBar = document.getElementsByClassName("div.player-health-bar");
+// let compHealthBar = document.getElementsByClassName("div.comp-health-bar");
+
 const gameGrid = document.getElementById('game');
 gameGrid.append(userChoiceDisplay, compChoiceDisplay, resultDisplay);
 
@@ -70,7 +73,7 @@ function getResult() {
 
         if (playerScore === 5) {
             result += "You won the match!"
-            document.getElementsByClassName("div.comp-health-bar").style.padding = "10px 5px";
+            compHealthBar = "10px 5px";
             disableButton();
         }
     } if (
@@ -84,7 +87,7 @@ function getResult() {
 
         if (compScore === 5) {
             result += "You lost the match!"
-            document.getElementsByClassName("div.player-health-bar").style.padding = "10px 5px";
+            document.getElementById("player-health-bar").style.padding = "14px 10px";
             disableButton();
         }
 
