@@ -147,4 +147,8 @@ div.comp-health-bar {
     justify-content: center;
     padding-bottom: 15px;
 }
-/* Results */
+
+/* Characters */
+  div > #paper {
+    width: 225px;
+}
