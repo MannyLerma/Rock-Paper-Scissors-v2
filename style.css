@@ -160,3 +160,288 @@ div > #rock {
 div > #scissors {
     width: 225px;
 }
+
+
+/* iPad media query */
+
+@media(max-width: 1024px) {
+    
+    body {
+        background: url(./imgs/tablet-background.png);
+        background-color: #00AEF1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* 
+        background-position: top;
+        font-family: 'Silkscreen', cursive;
+        text-align: center;
+        color: white;
+        height: 100%; */
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+
+    h2 {
+        font-size: 42px;
+        margin-top: 75px;
+    }
+    
+    h1 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+    #game {
+        position: absolute;
+        right: -50px;
+        bottom: 275px;
+    }
+
+    #result {
+        margin-bottom: 70px;
+    }
+
+
+    .ui-container {
+        justify-content: space-evenly;
+    }
+
+    .new-game-container {
+        position: absolute;
+        top: 660px;
+        left: 250px;
+    }
+
+    .game-container {
+        position: absolute;
+        top: 500px;
+    }
+
+    .characters {
+        display: block;
+        position: fixed;
+    }
+
+    #game > input {
+        margin-top: 0px;
+    }
+
+    .new-game {
+        position: absolute;
+        width: 330px;
+        top: 560px;
+        left: 100px;
+    }
+
+    div > #rock {
+        width: 250px;
+        height: auto;
+        position: fixed;
+        top: 700px;
+        left: 100px;
+    }
+
+    div > #paper {
+        width: 250px;
+        height: auto;
+        position: fixed;
+        top: 675px;
+        left: 625px;
+    }
+
+    div > #scissors {
+        width: 250px;
+        height: auto;
+        position: fixed;
+        top: 900px;
+        left: 360px;
+    }
+
+    div.icon-container {
+        margin: 0px;
+    }
+
+    .comp-icon {
+        width: 100%;
+    }
+
+    .comp-name {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 8px;
+    }
+
+    .player-name {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 8px;
+    }
+
+}
+
+
+@media(max-width: 414px) {
+    
+    body {
+        background: url(./imgs/phone-background.png);
+        background-color: #00AEF1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%; 
+        /* 
+        background-position: top;
+        font-family: 'Silkscreen', cursive;
+        text-align: center;
+        color: white;
+*/
+    }
+
+    h2 {
+        font-size: 21px;
+        margin-top: 30px;
+    }
+    
+    h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    #game {
+        position: absolute;
+        left: -50px;
+    }
+
+    .ui-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 60px 0;
+        height: 185px;
+    }
+
+    div.icon-container {
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        background-color: white;
+        border: 5px black solid;
+        margin: 0 12px;
+    }
+
+    .new-game-container {
+        position: relative;
+        top: 660px;
+    }
+
+    #game > input {
+        margin-top: 0px;
+    }
+
+    .new-game {
+        width: 200px;
+        position: absolute;
+        top: -330px;
+        left: -120px;
+    }
+
+    div > #rock {
+        width: 125px;
+        height: auto;
+        position: absolute;
+        top: 60px;
+        left: 40px;
+    }
+
+    div > #paper {
+        width: 125px;
+        height: auto;
+        position: absolute;
+        top: 60px;
+        left: 290px;
+    }
+
+    div > #scissors {
+        width: 130px;
+        height: auto;
+        position: absolute;
+        top: 180px;
+        left: 180px;
+    }
+
+    div.icon-container {
+        margin: 0px;
+    }
+
+    div.comp-health-bar-container {
+        background-color: gray;
+        width: 200px;
+        border: 5px black solid;
+        height: 20px;
+    }
+    
+    div.comp-health-bar {
+        background-color: green;
+        /* padding: 14px 100px; */
+        height: 20px;
+        width: 200px;
+        display: inline-flex;
+    }
+
+    div.player-health-bar-container {
+        background-color: gray;
+        width: 200px;
+        border: 5px black solid;
+    }
+    
+    div.player-health-bar {
+        background-color: green;
+        /* padding: 14px 100px; */
+        height: 20px;
+        width: 200px;
+    }
+    
+    div > .player-container {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        margin: 15px 40px;
+        align-items: flex-end;
+    }
+
+    div > .comp-container {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: right;
+        margin: 15px 40px;
+        align-items: flex-end;
+    }
+
+    .comp-icon {
+        width: 100%;
+    }
+
+    .comp-name {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 8px;
+    }
+
+    .player-name {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 8px;
+    }
+
+    .time-limit {
+        width: 15%;
+    }
+
+    .ui-container {
+        margin: 20px 0;
+    }
+
+
+}
