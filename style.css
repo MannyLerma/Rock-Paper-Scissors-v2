@@ -180,7 +180,7 @@ div > #scissors {
     }
 
     h3 {
-        font-size: 18px;
+        font-size: 32px;
     }
 
 
@@ -195,9 +195,13 @@ div > #scissors {
     }
 
     #game {
+        display: flex;
+        width: 112%;
+        flex-direction: column;
+        left: -25px;
         position: absolute;
+        width: 100%;
         right: -50px;
-        bottom: 275px;
     }
 
     #result {
@@ -233,23 +237,23 @@ div > #scissors {
         position: absolute;
         width: 330px;
         top: 560px;
-        left: 100px;
+        left: 115px;
     }
 
     div > #rock {
         width: 250px;
         height: auto;
         position: fixed;
-        top: 700px;
-        left: 100px;
+        top: 675px;
+        right: 580px;
     }
 
     div > #paper {
         width: 250px;
         height: auto;
         position: fixed;
-        top: 675px;
-        left: 625px;
+        top: 655px;
+        left: 615px;
     }
 
     div > #scissors {
@@ -285,12 +289,18 @@ div > #scissors {
 
 @media(max-width: 414px) {
     
+    * {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
     body {
         background: url(./imgs/phone-background.png);
         background-color: #00AEF1;
         background-size: cover;
         background-repeat: no-repeat;
         height: 100%; 
+
         /* 
         background-position: top;
         font-family: 'Silkscreen', cursive;
@@ -299,19 +309,25 @@ div > #scissors {
 */
     }
 
+    h3 {
+        font-size: 18px;
+    }
+
     h2 {
         font-size: 21px;
-        margin-top: 30px;
+        margin-top: 0px;
     }
     
     h1 {
-        font-size: 32px;
-        margin-bottom: 10px;
+        font-size: 36px;
+        margin-bottom: 0px;
     }
 
     #game {
         position: absolute;
         left: -50px;
+        top: 315px;
+        left: 2px;
     }
 
     .ui-container {
@@ -332,8 +348,7 @@ div > #scissors {
     }
 
     .new-game-container {
-        position: relative;
-        top: 660px;
+        position: fixed;
     }
 
     #game > input {
@@ -342,33 +357,33 @@ div > #scissors {
 
     .new-game {
         width: 200px;
-        position: absolute;
-        top: -330px;
-        left: -120px;
+        position: fixed;
+        top: 675px;
+
     }
 
     div > #rock {
         width: 125px;
         height: auto;
-        position: absolute;
-        top: 60px;
-        left: 40px;
+        position: fixed;
+        top: 375px;
+        left: 10px;
     }
 
     div > #paper {
         width: 125px;
         height: auto;
-        position: absolute;
-        top: 60px;
-        left: 290px;
+        position: fixed;
+        top: 360px;
+        left: 220px;
     }
 
     div > #scissors {
         width: 130px;
         height: auto;
-        position: absolute;
-        top: 180px;
-        left: 180px;
+        position: fixed;
+        top: 500px;
+        left: 120px;
     }
 
     div.icon-container {
@@ -427,20 +442,22 @@ div > #scissors {
         margin-top: 0px;
         margin-bottom: 0px;
         margin-right: 8px;
+        font-size: 18px;
     }
 
     .player-name {
         margin-top: 0px;
         margin-bottom: 0px;
         margin-left: 8px;
+        font-size: 18px;
     }
 
     .time-limit {
-        width: 15%;
+        width: 10%;
     }
 
     .ui-container {
-        margin: 20px 0;
+        margin: 0px 0;
     }
 
 
