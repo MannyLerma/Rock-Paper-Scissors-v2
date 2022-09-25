@@ -162,7 +162,7 @@ div > #scissors {
 }
 
 
-/* iPad media query */
+/* iPad Vertical Breakpoint */
 
 @media(max-width: 1024px) {
     
@@ -287,6 +287,110 @@ div > #scissors {
 }
 
 
+/* iPhone Horizontal Breakpoint  */
+@media(max-width: 736px) {
+
+    body {
+        background: url(./imgs/phone-horizontal-bg.png);
+        background-color: #00AEF1;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 21px;
+        margin-top: 0px;
+    }
+
+    h3 {
+        font-size: 14px;
+        width: 104%;
+    }
+
+    div.player-container {
+        margin: 20px;
+    }
+
+    div.comp-container {
+        margin: 20px;
+    }
+
+    div.icon-container {
+        height: 42px;
+    }
+
+    .player-name {
+        font-size: 16px;
+    }
+
+    .comp-name {
+        font-size: 16px;
+    }
+
+    .time-limit {
+        width: 7%;
+        margin-bottom: 4px;
+    }
+
+    div.player-health-bar {
+        height: 19px;
+    }
+
+    div.comp-health-bar {
+        height: 19px;
+    }
+
+    div.comp-health-bar-container {
+        height: 19px;
+    }
+
+    .ui-container {
+        height: 126px;
+    }
+
+    div > #rock {
+        width: 130px;
+        top: 190px;
+        right: 460px;
+    }
+
+    div > #paper {
+        width: 130px;
+        top: 190px;
+        left: 460px;
+    }
+
+    div > #scissors {
+        width: 135px;
+        top: 190px;
+        left: 265px;
+    }
+
+    #result {
+        margin-bottom: -48px;
+    }
+
+    .new-game-container {
+        left: 285px;
+        top: 360px;
+    }
+
+    .new-game {
+        width: 160px;
+        top: 0;
+        left: 0;
+    }
+
+}
+
+
+
+/* iPhone Vertical Breakpoint */
 @media(max-width: 414px) {
     
     * {
@@ -358,7 +462,8 @@ div > #scissors {
     .new-game {
         width: 200px;
         position: fixed;
-        top: 675px;
+        top: 665px;
+        left: 110px;
 
     }
 
